@@ -47,5 +47,6 @@ if [ "${jobids}" = "" ]; then
     echo "well I would...but you've got no jobs to kill m8"
 else
     echo "killing $jobids"
-    parallel 'scancel {}' ::: ${jobids} 
+    #parallel 'scancel {}' ::: ${jobids}
+    echo "${jobids}" | xargs -n 1 -P 8 scancel
 fi
