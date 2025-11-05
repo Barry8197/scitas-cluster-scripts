@@ -73,7 +73,7 @@ This is an approximate diagram of how the cluster is configured for a different 
     ```
     git clone https://github.com/cdt-data-science/cluster-scripts
     cd ./cluster-scripts
-    echo 'export PATH=/home/$USER/cluster-scripts:$PATH' >> ~/.bashrc
+    echo 'export PATH=/home/$USER/scitas-cluster-scripts:$PATH' >> ~/.bashrc
     source ~/.bashrc
     ```
 

@@ -40,7 +40,7 @@ Follow these commands:
 ```{bash}
 cd ~
 git clone https://github.com/cdt-data-science/cluster-scripts.git
-echo 'export PATH=/home/$USER/cluster-scripts:$PATH' >> ~/.bashrc
+echo 'export PATH=/home/$USER/scitas-cluster-scripts:$PATH' >> ~/.bashrc
 source ~/.bashrc
 ```
 
