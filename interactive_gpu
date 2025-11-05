@@ -3,16 +3,9 @@
 set -e
 
 default_time="08:00:00"
-default_part="cdtgpucluster"
-
-# Exceptions to defaults
-if [ "$HOSTNAME" = "uhtred.inf.ed.ac.uk" ]; then
-  default_part="PGR-Standard"
-elif [ "$HOSTNAME" = "escience6.inf.ed.ac.uk" ]; then
-  default_part="ILCC_GPU"
-fi
-
-default_args="--partition=${default_part} --time=${default_time} --mem=14000 --cpus-per-task=4 --gres=gpu:1"
+default_part="h100"
+default_qos="normal"
+default_args="--partition=${default_part} --qos=${default_qos} --time=${default_time} --mem=14000 --cpus-per-task=4 --gres=gpu:1"
 
 print_welcome () {
   cat << EOM
@@ -33,7 +26,6 @@ Useful arg examples:
 * --time=1-04:00:30      terminate job after 1 day, 4 hours,
                          and 30 seconds
 * --gres=gpu:1           give me 1 gpu
-* --nodelist=charles19   put me on a specific node
 * --mem=4000             give me 4G of RAM (note this is not GPU memory)
 * --cpus-per-task=1      give me 1 cpu
 * --partition=...        there is a likely a partition explicitly for
