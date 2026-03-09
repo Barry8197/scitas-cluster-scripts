@@ -28,8 +28,8 @@ it with lots of additional jobs, it will slow everything down for everyone.
 Thankfully, it's easy to simply jump on one of the nodes in the cluster and
 work from there - everything works the same as if you were on the headnode:
 ```
-cluster_name=cdtcluster  # e.g. mlp or ilcc-cluster
-ssh ${USER}@${cluster_name}.inf.ed.ac.uk
+cluster_name=normal  # e.g. normal or bigmem
+ssh ${GASPAR}@${cluster_name}.epfl.ch
 
 # Run this slurm command to be allocated to a node in the default partition
 # We have set a maximum time and a few other constraints:
