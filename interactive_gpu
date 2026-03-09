@@ -3,9 +3,9 @@
 set -e
 
 default_time="08:00:00"
-default_part="h100"
+default_part="l40s"
 default_qos="normal"
-default_args="--partition=${default_part} --qos=${default_qos} --time=${default_time} --mem=14000 --cpus-per-task=4 --gres=gpu:1"
+default_args="--partition=${default_part} --qos=${default_qos} --time=${default_time} --mem=24000 --cpus-per-task=6 --gres=gpu:1"
 
 print_welcome () {
   cat << EOM
