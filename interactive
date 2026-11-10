@@ -6,7 +6,7 @@ default_time="08:00:00"
 default_part="standard"
 default_qos="serial"
 
-default_args="--partition=${default_part} --qos=${default_qos} --time=${default_time} --mem=14000 --cpus-per-task=4"
+default_args="--partition=${default_part} --qos=${default_qos} --time=${default_time} --mem=60G --cpus-per-task=10"
 
 print_welcome () {
   cat << EOM
