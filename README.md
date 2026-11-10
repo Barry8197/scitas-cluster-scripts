@@ -39,7 +39,7 @@ you can recieve updates easily.
 Follow these commands: 
 ```{bash}
 cd ~
-git clone https://github.com/cdt-data-science/cluster-scripts.git
+git clone https://github.com/scitas-cluster-scripts/cluster-scripts.git
 cp scitas-cluster-scritps/bash_file_source .bashrc 
 echo 'export PATH=/home/$USER/scitas-cluster-scripts:$PATH' >> ~/.bashrc
 source ~/.bashrc
