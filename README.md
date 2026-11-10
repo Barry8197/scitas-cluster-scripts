@@ -58,6 +58,7 @@ If you want to have job ID autocompletion for `scancel`, you need to source the
 `job-id-completion.sh` script:
 ```{bash}
 cd ~
+cp scitas-cluster-scritps/bash_file_source .bashrc 
 echo "source /home/$USER/cluster-scripts/job-id-completion.sh" >> ~/.bashrc
 source ~/.bashrc
 ```
